@@ -1,0 +1,707 @@
+/*
+
+[Responsive Stylesheet]
+
+Project: Hoskia - Multipurpose Hosting with WHMCS and Technology Business WordPress Theme
+Version: 1.0
+Author : themelooks.com
+
+
+NOTE:
+------
+PLEASE DO NOT EDIT THIS CSS, YOU MAY NEED TO USE "custom.css" FILE FOR WRITING YOUR CUSTOM CSS.
+WE MAY RELEASE FUTURE UPDATES SO IT WILL OVERWRITE THIS FILE. IT'S BETTER AND SAFER TO USE "custom.css".
+
+
+[TABLE OF CONTENTS]
+
+1. MEDIA QUERIES
+    1.1. LARGE DEVICES, WIDE SCREENS
+    1.2. MEDIUM DEVICES, DESKTOPS
+    1.3. SMALL DEVICES, TABLETS
+    1.4. SMALL DEVICES, SMARTPHONES
+    1.5. CUSTOM, IPHONE RETINA
+
+*/
+
+/*------------------------------------*\
+    1. MEDIA QUERIES
+\*------------------------------------*/
+/* 1.1. LARGE DEVICES, WIDE SCREENS */
+@media screen and (max-width: 1199px) {
+    /* HEADER AREA */
+    .header--nav-links > li > a {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+    .header--nav-links.cart > li > a,
+    .header--nav-links.client-area > li > a {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .header--nav-links.cart > li > a {
+        margin-right: 0;
+    }
+    
+    .mega-menu-link {
+        margin-left: 10px !important;
+        margin-right: 10px !important;
+    }
+    
+    /* GALLERY AREA */
+    .gallery--content-sidebar .table th {
+        min-width: 145px;
+    }
+    .gallery--content-sidebar .table td {
+        padding-left: 10px;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    /* PRICING AREA */
+    .pricing--header > span:first-child,
+    .pricing--ribbon {
+        top: 24px;
+        left: -46px;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        font-size: 12px;
+    }
+
+    /* SHOP AREA */
+    .product--single-summery-meta .btn-group {
+        margin-top: 0;
+        margin-left: 4px;
+    }
+    .product--single-summery-meta .btn-group .btn.cart {
+        padding-right: 10px;
+    }
+    .product--single-summery-meta .btn-group .btn.cart .fa {
+        margin-right: 10px;
+    }
+    .product--single-summery-meta .btn-group .btn {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+/* 1.2. MEDIUM DEVICES, DESKTOPS */
+@media screen and (max-width: 991px) {
+    /* PAGE CONTENT */
+    .page--main-content img.m--0 {
+        margin-bottom: 30px;
+    }
+
+    .about-page img {
+        margin-bottom: 20px;
+    }
+
+    /* RESEPONSIVE COLLAPSE MENU */
+    .header--navbar .navbar-header {
+        float: none;
+    }
+    .header--navbar .navbar-toggle {
+        display: block;
+    }
+    .header--nav.collapse {
+        display: none !important;
+        max-height: 320px;
+    }
+    .header--nav.collapsing,
+    .header--nav.collapse.in {
+        display: block !important;
+    }
+    .header--nav.collapse.in {
+        overflow-y: auto !important;
+    }
+    
+    /* HEADER AREA */
+    .header--navbar > .container {
+        position: static;
+    }
+    
+    .header--navbar .navbar-header .header--nav-links {
+        float: right;
+        margin: 0;
+    }
+    .header--navbar .navbar-header .header--nav-links.client-area {
+        margin-left: 12px;
+    }
+
+    .header--nav {
+        position: absolute;
+        left: 0;
+        right: 0;
+        padding-left: 0;
+        padding-right: 0;
+        border-top: 1px solid #eee;
+        background-color: #f9f9f9;
+        box-shadow: 0 9px 9px 0 rgba(47, 44, 44, 0.2);
+    }
+    
+    .header--nav-links {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .header--nav .header--nav-links {
+        width: 750px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .header--nav-links.navbar-right {
+        float: none !important;
+    }
+    .header--nav-links > li {
+        float: none !important;
+    }
+    .header--nav-links > li > a {
+        margin-left: 0;
+        margin-right: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+    .header--nav-links > li.dropdown > .dropdown-menu {
+        float: none;
+        position: relative;
+        box-shadow: none;
+    }
+    .header--nav-links > li.dropdown.open > .dropdown-menu {
+        -webkit-animation: none;
+                animation: none;
+    }
+    .header--nav-links > li.dropdown.megamenu > .dropdown-menu.bg--overlay {
+        position: relative;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    .header--nav-links.cart > li > a {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    
+    .mega-menu-wrap {
+        float: none !important;
+    }
+    .mega-menu {
+        max-width: 740px;
+        margin-top: 16px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+        text-align: left !important;
+    }
+    .mega-menu-item {
+        display: block !important;
+    }
+    .mega-menu-link {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+        text-align: left !important;
+    }
+    .mega-sub-menu {
+        position: relative !important;
+        width: 100% !important;
+        box-shadow: none !important;
+        opacity: 1 !important;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+        visibility: visible !important;
+    }
+    .mega-menu-item > .mega-sub-menu {
+        display: none !important;
+    }
+    .mega-toggle-on > .mega-sub-menu {
+        display: block !important;
+        -webkit-animation: none;
+                animation: none;
+    }
+    li.mega-toggle-on > .mega-sub-menu {
+        left: 0 !important;
+        right: 0 !important;
+    }
+    .mega-menu-row {
+        float: none !important;
+    }
+    
+    .mega-menu-column {
+        width: 100% !important;
+    }
+    
+    .mega-sub-menu .mega-sub-menu .mega-menu-item-type-widget {
+        margin-top: 30px !important;
+        margin-bottom: 0 !important;
+    }
+    
+    /* BANNER SECTION */
+    .banner--item > .container > .row {
+        display: block;
+    }
+    
+    /* Contact Area */
+    .contact-info--icon {
+        float: none;
+        margin-bottom: 30px;
+    }
+
+    /* COUNTER AREA */
+    .counter--item-border:after {
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    }
+    
+    /* SERVICES TAB AREA */
+    .services-tab--item .row--vc > div {
+        display: block;
+    }
+    .services-tab--content + .services-tab--img,
+    .services-tab--img + .services-tab--content {
+        margin-top: 40px;
+    }
+    .services-tab--content.pull-right {
+        float: none !important;
+    }
+    .services-tab--content.pull-right + .services-tab--img {
+        margin-top: 40px;
+    }
+    .services-tab--img img {
+        margin: 0 auto;
+    }
+    .services-tab--content {
+        text-align: center;
+    }
+    
+    /* FEATURES GRID AREA */
+    .features-grid--left {
+        height: auto !important;
+        text-align: left;
+    }
+    .features-grid--left.text-right .features-grid--item .step {
+        left: auto;
+        right: 30px;
+    }
+    
+    /* GALLERY AREA */
+    .gallery--content .article + .aside {
+        margin-top: 60px;
+    }
+
+    /* DATACENTER AREA */
+    .datacenter--img + .datacenter--content {
+        margin-top: 60px;
+    }
+    
+    /* PRICING INCLUDED AREA */
+    #pricingIncluded .pricing--item {
+        display: block;
+    }
+    #pricingIncluded .pricing--item:first-child {
+        display: none;
+    }
+    #pricingIncluded .pricing--features {
+        text-align: right;
+    }
+    #pricingIncluded.pricing--items.border--on .pricing--features:before {
+        border-right-width: 1px;
+    }
+    #pricingIncluded .pricing--features li strong {
+        float: left;
+        color: #222;
+        font-family: 'Poppins', serif;
+        font-weight: normal;
+    }
+    #pricingIncluded .pricing--items.border--on .pricing--features:before {
+        border-right-width: 1px;
+    }
+    
+    /* PRICING TABLE AREA */
+    .pricing--table thead {
+        display: none;
+    }
+    .pricing--table tr {
+        display: block;
+        margin-bottom: 30px;
+        border-top: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    .pricing--table tr:last-child {
+        margin-bottom: 0;
+    }
+    .pricing--table td {
+        display: block;
+        padding-top: 11px !important;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+        text-align: right;
+    }
+    .pricing--table td:before {
+        top: 0;
+        border-width: 0 1px 1px;
+        border-radius: 0;
+    }
+    .pricing--table td:first-child:before {
+        border-radius: 4px 4px 0 0;
+    }
+    .pricing--table td:last-child:before {
+        border-radius: 0 0 4px 4px;
+    }
+    .pricing--table td:after {
+        display: none;
+    }
+    .pricing--table td strong {
+        float: left;
+        margin-right: 10px;
+        color: #222;
+        font-family: 'Poppins', serif;
+    }
+    .pricing--table td .btn + strong {
+        margin-top: 8px;
+    }
+    
+    /* BLOG AREA */
+    .page--main-content + .page--sidebar {
+        margin-top: 60px;
+    }
+
+    .post--img img {
+        margin-bottom: 0 !important;
+    }
+
+    .post--comments-list ul.children {
+        margin-left: 0;
+    }
+
+    /* SHOP AREA */
+    .product--single-img + .product--single-summery {
+        margin-top: 40px;
+    }
+    
+    /* CART AREA */
+    #cart .pricing--table .product--quantity {
+        display: inline-block;
+    }
+    #cart .pricing--table .product--quantity + strong {
+        margin-top: 9px;
+    }
+    #cart .pricing--table td.remove {
+        text-align: center;
+    }
+    
+    #cart .pricing--table tr.cart--actions {
+        padding-bottom: 15px;
+        border-top: 0;
+    }
+    #cart .pricing--table tr.cart--actions > td > strong {
+        display: none;
+    }
+    
+    .cart--coupon .input-group {
+        display: block;
+    }
+    
+    /* CHECKOUT AREA */
+    .checkout--form form > .row > .col-md-6 + .col-md-6 {
+        margin-top: 60px;
+    }
+    
+    /* 404 AREA */
+    #f0f, #f0f > .container,
+    #f0f > .container > .row,
+    #f0f > .container > .row > div {
+        height: auto;
+    }
+    .f0f--title h1 {
+        margin-bottom: 80px;
+        border-right: 0;
+        border-bottom: 2px solid #999;
+        font-size: 64px;
+        line-height: 105px;
+        text-align: center;
+    }
+    
+    .f0f--content {
+        padding-bottom: 80px;
+        text-align: center;
+    }
+    
+    /* COMING SOON PAGE */
+    .coming-soon--slider {
+        height: auto !important;
+    }
+
+    .coming-soon--slider .item {
+        padding: 150px 0;
+    }
+
+    .coming-soon--slider .owl-nav > div {
+        opacity: 0.45;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=45)";
+    }
+
+    .coming-soon--slider .owl-nav > div:hover {
+        opacity: 1;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    }
+}
+
+/* 1.3. SMALL DEVICES, TABLETS */
+@media screen and (max-width: 767px) {
+    /* HEADER AREA */
+    .header--topbar .nav {
+        float: left;
+    }
+    
+    .header--topbar .nav {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .header--topbar .nav > li {
+        float: left;
+    }
+    
+    .header--social {
+        margin-left: 0;
+    }
+    .header--social > li > a {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    
+    .header--navbar .navbar-header {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    .header--nav {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+    .header--nav-links {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .header--nav .header--nav-links {
+        width: auto;
+    }
+    .header--nav-links > li.dropdown > .dropdown-menu {
+        background-color: #fff;
+    }
+    
+    .header--nav-links.cart > li > a {
+        margin-right: 0;
+    }
+
+    .header--nav-links .dropdown-menu .dropdown-menu {
+        position: relative;
+        float: none;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 0 15px;
+        box-shadow: none;
+    }
+    
+    /* BANNER AREA */
+    .banner--slider .owl-nav {
+        display: none;
+    }
+
+    /* FEATURES AREA */
+    .feature--item {
+        width: 100%;
+        text-align: center;
+    }
+    .feature--icon .fa {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .feature--icon img {
+        padding-right: 0;
+    }
+
+    /* Contact Area */
+    .contact-info--wrapper > .row {
+        -ms-flex-flow: column;
+            flex-flow: column;
+    }
+
+    /* COUNTER AREA */
+    .counter--item {
+        text-align: center;
+    }
+    .counter--item:after {
+        opacity: 0;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    }
+    
+    .counter-style--3 {
+        padding: 0;
+    }
+    
+    .counter-style--3 .icon {
+        position: relative;
+        margin: 0 auto 30px;
+    }
+
+    /* SERVICES AREA */
+    .service--item {
+        width: 100%;
+        text-align: center;
+    }
+    .service--icon {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 25px;
+    }
+    
+    /* SERVICES TAB AREA */
+    .services-tab--item {
+        padding: 30px;
+    }
+    
+    /* GALLERY AREA */
+    .gallery--item {
+        width: 100%;
+    }
+
+    /* SHOP AREA */
+    .product--img figcaption .nav > li {
+        display: table-cell;
+        width: 1%;
+    }
+
+    .products > .product {
+        width: 100%;
+    }
+    
+    /* CART AREA */
+    .cart--coupon {
+        float: none !important;
+        margin-bottom: 30px;
+    }
+    
+    .cart--actions > td > button[type="submit"] {
+        float: none !important;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    /* HEADER AREA */
+    .mega-menu-toggle {
+        display: none !important;
+    }
+    .mega-menu {
+        display: block !important;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+        background-color: transparent !important;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    .wc-tabs > li {
+        float: none;
+    }
+
+    .wc-tabs > li ~ li > a {
+        margin-top: -1px;
+        margin-left: 0;
+    }
+}
+
+/* 1.4. SMALL DEVICES, SMARTPHONES */
+@media screen and (max-width: 480px) {
+    /* PAGE CONTENT AREA */
+    .page--main-content-title .h3 {
+        padding-right: 80px;
+    }
+    
+    /* HEADER AREA */
+    .header--logo {
+        max-width: 200px;
+    }
+    
+    /* VPS PRICING AREA */
+    .vps-pricing--item.col-xs-6 {
+        float: none;
+        width: 100%;
+    }
+    
+    .vps-pricing--slider.ui-widget {
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+    
+    .vps-pricing--slider.ui-widget:before {
+        left: -80px;
+        right: -80px;
+    }
+    
+    .vps-pricing--slider.ui-widget:after {
+        left: -75px;
+        width: 75px;
+    }
+    
+    .vps-pricing--slider .pricing--content {
+        left: -65px;
+        width: 160px;
+    }
+    
+    /* LOGIN AREA */
+    .login--form .checkbox label,
+    .login--form .checkbox a {
+        float: none !important;
+    }
+    .login--form .checkbox label {
+        margin-bottom: 5px;
+    }
+    
+    /* SHOP AREA */
+    .woocommerce .woocommerce-result-count,
+    .woocommerce-page .woocommerce-result-count {
+        float: none;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .woocommerce .woocommerce-ordering,
+    .woocommerce-page .woocommerce-ordering {
+        float: none;
+    }
+
+    /* CART AREA */
+    .cart--coupon .input-group {
+        width: 100%;
+    }
+    .cart--coupon .form-control {
+        float: none;
+        display: block;
+        width: 100%;
+        border-right: 1px solid #ccc;
+        border-radius: 4px !important;
+    }
+    .cart--coupon .input-group-addon {
+        display: block;
+    }
+    .cart--coupon .input-group-addon .btn {
+        margin-top: 10px;
+        border-radius: 4px;
+    }
+    
+    /* HIDDEN XS */
+    .hidden-xxs {
+        display: none !important;
+    }
+}
+
+/* 1.5. CUSTOM, IPHONE RETINA */
+@media screen and (max-width: 380px) {
+}
